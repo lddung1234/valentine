@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Valentine của An</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/iao-alert.css" />
+    <!-- <link href="css/style.css" rel="stylesheet" /> -->
+    <style>
+      body {
+        background-color: #d1d1d1;
+        position: relative;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      #btn-yes,
+      #btn-no {
+        background: #54e80a;
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-weight: 600;
+        color: white;
+        border: 1px solid #d1d1d1;
+        box-shadow: 2px 2px #ffd800;
+        width: 100px;
+        cursor: pointer;
+      }
+      #btn-no {
+        background: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Bé An muốn nhận quà Valentine không?</h1>
+    <p align="center" id="box-btn" style="position: absolute">
+      <button id="btn-yes">Nhận quà</button>
+      <button id="btn-no">Không</button>
+    </p>
+    <section>
+      <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+      <script src="js/iao-alert.jquery.js"></script>
+      <!-- <script src="js/script.js"></script> -->
+    </section>
+    <script>
+      let btnNo = $("#btn-no");
+      let btnYes = $("#btn-yes");
+      function toast(content, type, location) {
+        $.iaoAlert({
+          msg: content,
+          type: type,
+          mode: "dark",
+          position: location,
+          autoHide: true,
+          alertTime: "3000",
+        });
+      }
+      btnNo.click(function () {
+        toast("Cảm ơn em đã không cần quà ❤️", "success", "bottom-right");
+      });
+      btnYes.click(function () {
+        // random vị trí cho btn
+        let top = Math.floor(Math.random() * 550) + 1;
+        let left = Math.floor(Math.random() * 1000) + 1;
+        $("#box-btn").css("top", top + "px");
+
+        $("#box-btn").css("left", left + "px");
+
+        $.iaoAlert({
+          msg: "Đố em nhận quà được🤣",
+          type: "error",
+          mode: "dark",
+          position: "bottom-right",
+          autoHide: true,
+          alertTime: "3000",
+        });
+      });
+    </script>
+  </body>
+</html>

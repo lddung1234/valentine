@@ -1,0 +1,30 @@
+﻿body {
+  background-color: #d1d1d1;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+}
+
+#btn-yes,
+#btn-no {
+  background: #54e80a;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid #d1d1d1;
+  box-shadow: 2px 2px #ffd800;
+  width: 100px;
+  cursor: pointer;
+}
+#btn-no {
+  background: #ff0000;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
