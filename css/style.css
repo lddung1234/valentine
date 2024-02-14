@@ -24,6 +24,9 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
   #btn-yes,
   #btn-no {
     background: #54e80a;
@@ -34,7 +37,7 @@ h1 {
     border: 1px solid #d1d1d1;
     box-shadow: 2px 2px #ffd800;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 40px;
     z-index: 999;
   }
   #btn-no {
