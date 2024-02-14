@@ -15,8 +15,8 @@ btnNo.click(function () {
 });
 btnYes.click(function () {
   // random vị trí cho btn
-  var chieuDaiManHinh = window.innerWidth - 100;
-  var chieuCaoManHinh = window.innerHeight - 100;
+  var chieuDaiManHinh = window.innerWidth - 150;
+  var chieuCaoManHinh = window.innerHeight - 150;
   let top = Math.floor(Math.random() * chieuCaoManHinh) + 1;
   let left = Math.floor(Math.random() * chieuDaiManHinh) + 1;
   $("#box-btn").css("top", top + "px");
