@@ -13,10 +13,12 @@ function toast(content, type, location) {
 btnNo.click(function () {
   toast("Cảm ơn em đã không cần quà ❤️", "success", "bottom-right");
 });
-btnYes.mouseover(function () {
+btnYes.click(function () {
   // random vị trí cho btn
-  let top = Math.floor(Math.random() * 550) + 1;
-  let left = Math.floor(Math.random() * 1000) + 1;
+  var chieuDaiManHinh = window.innerWidth - 100;
+  var chieuCaoManHinh = window.innerHeight - 100;
+  let top = Math.floor(Math.random() * chieuCaoManHinh) + 1;
+  let left = Math.floor(Math.random() * chieuDaiManHinh) + 1;
   $("#box-btn").css("top", top + "px");
 
   $("#box-btn").css("left", left + "px");

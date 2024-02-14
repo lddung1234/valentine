@@ -24,7 +24,20 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+  #btn-yes,
+  #btn-no {
+    background: #54e80a;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    border: 1px solid #d1d1d1;
+    box-shadow: 2px 2px #ffd800;
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 999;
+  }
+  #btn-no {
+    background: #ff0000;
   }
 }
